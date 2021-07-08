@@ -1,0 +1,66 @@
+// ----------------------------------------------
+// TAG
+// ----------------------------------------------
+
+.c-tag {
+    display: flex;
+    margin: 25px 0 10px 0;
+ 
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 20px 0 0px;
+        background-color: palette(tag, base);
+        padding: 5px 13px 5px 24px;
+        border-radius: 6px;
+        transition: all .2s;
+
+        &:hover {
+            background-color: palette(tag, hover);
+            transition: all .2s;
+        }
+
+        img {
+            width: 24px;
+            border-radius: 50px;
+            padding: 5px;
+            transition: all .2s;
+            cursor: pointer;
+
+            &:hover {
+                transition: all .2s;
+                background-color: palette(mono, white);
+                border-radius: 50px;
+            }
+        }
+
+        p {
+            font-family: $primary-font-sb;
+            color: palette(blue, base);
+            margin: 0 8px 0 0;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .form-group {
+            margin: 0;
+
+            .input-group {
+
+                input {
+                    font-family: $primary-font-sb;
+                    color: palette(blue, base);
+                    background-color: transparent;
+                    padding: 0;
+                    border: 0;
+                    height: 30px;
+                }
+            }
+        }
+    }
+
+    &__input:hover {
+        background-color: palette(tag, base);
+    }
+}

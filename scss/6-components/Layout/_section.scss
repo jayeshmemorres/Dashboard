@@ -1,0 +1,38 @@
+// ----------------------------------------------
+// SECTION | PAGE
+// ----------------------------------------------
+
+.c-section-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 20px 0;
+
+    &__heading {
+        margin: 0;
+    }
+
+    &--right {
+        display: flex;
+        align-items: center;
+
+        &__content {
+            margin-right: 25px;
+
+            span {
+                margin-left: 10px;
+            }
+
+            img {
+                width: 20px !important;
+            }
+        }
+
+        img {
+            width: 40px;
+        }
+    }
+}
+.c-tab-section{
+    display: flex;
+    margin: 20px 0 20px 0;
+}

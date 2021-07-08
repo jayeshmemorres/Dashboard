@@ -1,0 +1,44 @@
+// ----------------------------------------------
+// TOAST
+// ----------------------------------------------
+
+.Toastify {
+    
+    &__toast-container {
+        width: 350px;
+    }
+
+    &__toast {
+        padding: 15px;
+        border-radius: 12px;
+    }
+
+    &__toast-message {
+        display: flex;
+        align-items: center;
+        
+        span{
+            padding-right: 10px;
+        }
+    }
+
+    &__toast--info {
+        background: palette(blue, base);
+    }
+      
+    &__toast-body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+      
+    &__toast-message span {
+        margin-left: 15px;
+        font-family: $primary-font-m;
+        font-size: 18px;
+    }
+      
+    &__toast-close {
+        margin-right: 10px;
+    }
+}

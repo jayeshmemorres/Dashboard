@@ -1,0 +1,68 @@
+// ----------------------------------------------
+// Themes Color Style
+// ----------------------------------------------
+
+// palette(mono, black);
+
+@function palette($palette, $tone: 'base') {
+    @return map-get( map-get($palettes, $palette), $tone );
+}
+
+$palettes: (
+    mono: (
+        primery:        #3855B3,
+        primery-dark:  #10277C,
+        grey:         #77869E,
+        light:        #DADADA,
+        light-gray:   #8C8D8D,
+        black:        #000000,
+        white:       #ffffff,
+        border:    #E6E7E9,
+    ),
+    alert: (
+        danger:       #FA4747,
+    ),
+    card: (
+        border:       #ECECEC,
+    ),
+    mail: (
+        bg:           #FCE6CC,
+        text:         #A97646,
+        red:          #EA6363,
+    ),
+    datepiker: (
+        rdtOld:       #d9dbe6,
+        rdtOld-hover: #f0f2f9,
+    ),
+    radio-block-bg: (
+        light:        #EFF2F4,
+        base:         #EBF2FE,
+    ),
+    blue: (
+        extra-light:  #F3F6FC,
+        deep-light:   #EFF2F4,
+        light:        #DFE7F5,
+        base:         #0047CC,
+        dark:         #042C5C,
+        text:         #CCDEFC,
+        placeholder:  #b2bac7,
+        card:         #F1F7FE,
+        fade:         #0054D6,
+    ),
+    tag: (
+        base:         #EDF4FF,
+        hover:        #dbe4f3,
+    ),
+    table: (
+        th-bg:        #F2F7FE,
+        tr-border:    #EFEFF1,
+    ),
+    other: (
+        purple:       #6D63EF,
+        pink:         #F3818E,
+        blue:         #0047CC,
+        deep-sky:     #00A7CC,
+        text:       #181819,
+
+    ),
+);

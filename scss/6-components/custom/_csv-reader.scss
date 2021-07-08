@@ -1,0 +1,36 @@
+// ----------------------------------------------
+// CSV READER
+// ----------------------------------------------
+
+.c-csv-reader {
+  border: 1px dashed #bfbfbf;
+  border-radius: 10px;
+  text-align: center;
+  background: palette(blue, deep-light);
+
+  &__upload {
+    padding: 15px;
+    cursor: pointer;
+  }
+
+  &__file {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    span {
+      font-family: $primary-font-m;
+      text-align: left;
+    }
+
+    img {
+      width: 25px;
+      margin-left: 6px;
+      cursor: pointer;
+    }
+  }
+}
+
+.c-csv-error {
+  text-align: center;
+  margin: 7px 0 7px 0;
+}

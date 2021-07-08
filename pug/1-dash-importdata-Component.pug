@@ -1,0 +1,18 @@
+mixin dash1-Important-data(heading,subheading,r2,name)
+    div.c-Important-data
+      div.Important-data__header
+        div.Important-data__heading=heading
+        div.Important-data__subh-heading=subheading
+        div.Important-data__list
+            
+            img(src=r2 ).Important-data__image
+            div.Important-data__details
+                div.Important-data__name=name
+                div.Important-data__button Launch Important
+
+div.main
+  +dash1-Important-data('Import data into Front Dashboard',"See and talk to your users and leads immediately" ,"../../images/Vector.png","jayesh")
+//-   +dash1-Important-data('Monthly expenses',"30%" ,"4000" )
+
+
+

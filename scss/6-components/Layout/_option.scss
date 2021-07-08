@@ -1,0 +1,67 @@
+// ----------------------------------------------
+// OPTION
+// ----------------------------------------------
+
+.c-option {
+    display: flex;
+
+    &__item {
+        margin: 0 0 0 20px;
+        border: 1px solid rgba(119, 134, 158, 0.6);
+        padding: 8px 15px 11px 15px;
+        height: 40px;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all .2s;
+        position: relative;
+
+        p {
+            margin: 0 15px 0 0px;
+            transition: all .2s;
+        }
+
+        img {
+            width: 16px;
+            transition: all .2s;
+        }
+
+        &--down_arrow {
+
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 40px;
+                border: 11px solid transparent;
+                border-bottom-color: palette(mono, white);
+                right: auto;
+                left: auto;
+                transform: rotate(180deg);
+                transition: all .2s;
+            }
+        }
+
+        &--active {
+           background-color: palette(blue, base);
+           transition: all .2s; 
+
+            p {
+                color: palette(mono, white);
+                transition: all .2s;
+            }
+
+            img {
+                filter: brightness(0) invert(1);
+                transition: all .2s;
+            }
+
+            &:after {
+                border-bottom-color: palette(blue, base);
+                top: 38px;
+            }
+        }
+    }
+}

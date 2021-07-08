@@ -1,0 +1,55 @@
+.c-table-user {
+    border: 2px solid #E6E7E9;
+    border-top: none;
+
+
+
+    &__caption {
+        text-align: left;
+        border: 2px solid #E6E7E9;
+        border-bottom: none;
+        padding: 15px;
+        color: black;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+
+    }
+&__first{
+    padding: 0 20px;
+}
+    .fa {
+        font-size: 10px;
+
+        margin-left: 5px;
+    }
+
+    tr {
+        text-align: left;
+        border-bottom: 2px solid #E6E7E9;
+        margin: 10px;
+        font-size: 16px;
+        color: rgba(24, 24, 25, 0.7);
+        font-size: 14px;
+
+    }
+
+    tr:nth-child(odd) {
+        background: rgba(56, 85, 179, 0.04);
+        
+    }
+
+    td {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        border-bottom: 2px solid #E6E7E9;
+        margin: 30px;
+        color: black;
+        margin-left: 50px
+    }
+
+    td:first-child {
+        padding-left: 20px;
+        padding-right: 0;
+    }
+}

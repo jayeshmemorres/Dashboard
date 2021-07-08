@@ -1,0 +1,61 @@
+// ----------------------------------------------
+// MAIL
+// ----------------------------------------------
+
+.c-mail {
+
+    &__user_status {
+        display: flex;
+
+        .c-tag__item {
+            padding: 0 5px;
+            margin: 0 10px 0 0px;
+            background-color: palette(blue, light);
+            cursor: auto;
+            border-radius: 4px;
+
+            img {
+                width: 20px;
+
+                &:hover {
+                    background-color: inherit;
+                    border-radius: 0px;
+                }
+            }
+
+            p {
+                font-size: 11px;
+                line-height: 22px;
+            }
+        }
+
+        .c-app_link {
+            
+            a {
+                color: palette(mail, red);
+                font-size: 11px;
+                text-decoration: underline;
+            }
+        }
+
+        &--non_active {
+            
+            .c-tag__item {
+                padding: 0 5px;
+                margin: 0 10px 0 0px;
+                background-color: palette(mail, bg);
+                cursor: auto;
+                border-radius: 4px;
+    
+                img {
+                    width: 20px;
+                }
+    
+                p {
+                    color: palette(mail, text);
+                }
+            }
+        }
+    }
+}
+

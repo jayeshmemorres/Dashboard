@@ -1,0 +1,21 @@
+// ----------------------------------------------
+// SCROLLBAR
+// ----------------------------------------------
+
+
+::-webkit-scrollbar
+{
+	width: 9px;
+	background-color: #e6e6e6;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 6px;
+	background-color: #adbdd8;
+}
+
+::-webkit-scrollbar-track
+{
+	background-color: #d5deec;
+}

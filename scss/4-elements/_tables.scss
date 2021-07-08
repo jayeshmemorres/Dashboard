@@ -1,0 +1,203 @@
+// ----------------------------------------------
+// TABLE
+// ----------------------------------------------
+
+.table-responsive {
+  overflow: visible;
+}
+
+.table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+
+  &:last-child {
+     margin: 0;
+  }
+
+  thead {
+
+     tr {
+        background-color: palette(table, th-bg);
+
+        th {
+           border: 0;
+           color: palette(blue, dark);
+           font-family: $primary-font-m;
+           font-weight: 400;
+           padding: 15px;
+           vertical-align: middle;
+           position: relative;
+
+           .sort-icon {
+              position: absolute;
+              top: 48%;
+              right: auto;
+              margin-left: 5px;
+              transition: all 0.2s;
+              cursor: pointer;
+
+              &--down {
+                 transform: rotate(180deg);
+              }
+           }
+
+           &:first-child {
+              border-top-left-radius: 10px;
+              border-bottom-left-radius: 10px;
+              border-left: 1px solid palette(table, th-bg);
+           }
+
+           &:last-child {
+              border-top-right-radius: 10px;
+              border-bottom-right-radius: 10px;
+              border-right: 1px solid palette(table, th-bg);
+           }
+        }
+     }
+  }
+
+  tbody {
+
+     tr {
+        border: 1px solid palette(table, tr-border);
+        border-radius: 6px;
+
+        &:nth-child(odd) {
+           background-color: palette(blue, extra-light);
+        }
+
+        &.no-background {
+           background-color: transparent;
+        }
+
+        td {
+           border: 1px solid palette(table, tr-border);
+           padding: 15px;
+           border-left: 0;
+           border-right: 0;
+           vertical-align: middle;
+           font-family: $primary-font-m;
+           color: palette(mono, gray);
+
+           &:first-child {
+              border-top-left-radius: 10px;
+              border-bottom-left-radius: 10px;
+              border-left: 1px solid palette(table, tr-border);
+           }
+
+           &:last-child {
+              border-top-right-radius: 10px;
+              border-bottom-right-radius: 10px;
+              border-right: 1px solid palette(table, tr-border);
+           }
+
+           span {
+              span {
+                 display: block;
+                 color: palette(mono, light-gray);
+                 font-size: 14px;
+                 line-height: 15px;
+              }
+           }
+
+            &.table-action-buttons {
+               min-width: 187px;
+
+               span {
+                  margin-left: 5px;
+               }
+            }          
+
+           .attachments {
+               display: flex;
+               cursor: pointer;
+         
+               img {
+                  margin-right: 6px;
+               }
+
+               span {
+                  border-bottom: 2px solid palette(mono, grey);
+               }
+            }
+        }
+     }
+  }
+  .datetime-container {
+
+      .table-picker {
+
+         table {
+            background-color: palette(mono, white);
+
+            th {
+               padding: 5px 10px;
+               border: 0;
+               border-radius: 0;
+            }
+
+            tr {
+               border: 0;
+               border-radius: 0;
+               background-color: inherit;
+               &:nth-child(odd) {
+                  background-color: inherit;
+               }
+            }
+
+            td {
+               border: 0;
+               padding: 0;
+               color: inherit;
+               font-family: $primary-font;
+               border-radius: 0;
+
+               &.rdtActive {
+                  color: palette(mono, white);
+               }
+               
+               &.rdtOld,
+               &.rdtNew,
+               &.rdtDisabled {
+                  color: palette(blue, light);
+               }
+            }
+         }
+
+         .rdtPicker {
+    
+            .rdtMonths,
+            .rdtYears {
+                min-width: 220px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+         }
+      }
+   }
+}
+
+.employee-leave-status {
+   padding: 2px 10px 5px 10px;
+   background: #dfe7fe;
+   border-radius: 4px;
+   font-size: 14px;
+   color: palette(blue, base);
+
+   &--cancelled {
+      background: #515151;
+      color: #D6D6D6;
+   }
+
+   &--rejected {
+      background: #FCCCCC;
+      color: #A94646;
+   }
+
+   &--pending {
+      background: #FCE6CC;
+      color: #A97646;
+      ;
+   }
+}

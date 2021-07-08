@@ -1,0 +1,145 @@
+// ----------------------------------------------
+// GRAPH
+// ----------------------------------------------
+
+.c-graph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.c-graph-legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 15px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin: 6px 18px;
+
+    p {
+      margin-bottom: 0;
+      margin-left: 7px;
+    }
+
+    &--cyan-blue {
+      color: #6753DA;
+
+      .c-graph-legend__itemcolor {
+        background-color: #6753DA;
+      }
+    }
+
+    &--pastel-yellow {
+      color: #dc9b3b;
+
+      .c-graph-legend__itemcolor {
+        background-color: #dc9b3b;
+      }
+    }
+
+    &--pastel-red {
+      color: #fa4747;
+
+      .c-graph-legend__itemcolor {
+        background-color: #fa4747;
+      }
+    }
+
+    &--pastel-green {
+      color: #27ac4f;
+
+      .c-graph-legend__itemcolor {
+        background-color: #27ac4f;
+      }
+    }
+    &--aud {
+      .c-graph-legend__itemcolor {
+        background-color: #45D793;
+      }
+    }
+
+    &--inr {
+      .c-graph-legend__itemcolor {
+        background-color: #F68188;
+      }
+    }
+    &--eur {
+      .c-graph-legend__itemcolor {
+        background-color: #9C8BFE;
+      }
+    }
+    &--usd {
+      .c-graph-legend__itemcolor {
+        background-color: #F4BD84;
+      }
+    }
+    &--nzd {
+      .c-graph-legend__itemcolor {
+        background-color: #82D4E5;
+      }
+    }
+  }
+
+  &__itemcolor {
+    width: 13px;
+    height: 12px;
+    background: palette(blue, base);
+    border-radius: 4px;
+  }
+}
+
+.c-graph-tooltip {
+  background: palette(blue, card);
+  border: 1px solid rgba(119, 134, 158, 0.2);
+  text-align: center;
+  padding: 10px 12px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__item {
+    img {
+      width: 40px;
+      height: 40px;
+      margin-right: 12px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 20px;
+      color: palette(blue, base);
+      font-family: $primary-font-sb;
+    }
+
+    span {
+      color: palette(blue, dark);
+    }
+  }
+}
+.c-graph__amount {
+  background: none !important;
+  font-size: 18px;
+  padding: 5px 5px;
+  border-radius: 4px;
+  margin-left: 15px;
+
+  &-inr {
+    color: #fcfdc9;
+  }
+  &-usd {
+    color: #c9fdcb;
+  }
+  &-eur {
+    color: #ffd4d4;
+  }
+  &-nzd {
+    color: #fde2c9;
+  }
+  &-aud {
+    color: #fdc9fb;
+  }
+}

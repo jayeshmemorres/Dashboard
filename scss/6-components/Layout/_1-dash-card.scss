@@ -1,0 +1,133 @@
+body {
+    background-color: white;
+}
+
+.main {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+
+
+    .c-card {
+        border: 2px solid #E6E7E9;
+        padding: 4px 20px;
+        margin: 10px;
+        width: 250px;
+        border-radius: 8px;
+
+
+        &__head {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__head-left {
+            color: rgba(24, 24, 25, 0.42);
+        }
+
+        &__head-right {
+            color: chartreuse;
+        }
+
+        &__body {
+            display: flex;
+            margin-top: 6px;
+            justify-content: space-between;
+        }
+
+        &__body-left {
+            color: black;
+        }
+
+        &__body-right {}
+
+    }
+
+}
+/////
+.general {
+    display: flex;
+}
+
+.c-geric-card {
+    min-width: 500px;
+    max-width: 600px;
+    min-height: 300px;
+    border: 2px solid #E6E7E9;
+    border-radius: 6px;
+    margin: 20px;
+
+
+
+
+
+    &__heading {
+        color: black;
+        font-size: 18px;
+        display: block;
+        padding: 25px 10px 0px 30px;
+    }
+
+    &__important-list {
+        margin-top: 30px;
+    }
+
+    &__list {
+        display: flex;
+        padding: 10px 0px 10px 10px;
+
+        img {
+            padding: 7px;
+        }
+    }
+
+    span {
+        padding: 25px 10px 0px 30px;
+    }
+
+    &__list-name {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        border-bottom: 1px solid #E6E7E9;
+    }
+
+    &__name {
+        margin: 10px;
+    }
+
+    &__first {
+        color: rgba(24, 24, 25, 0.9);
+    }
+
+    &__button {
+        padding: 20px;
+        color: rgba(24, 24, 25, 0.9);
+        font-weight: 500;
+        font-size: 18px;
+
+    }
+
+    //@at-root
+    &__img {
+        margin-top: 60px;
+
+        width: 500px;
+        height: 250px;
+    }
+
+    &__bottom {
+        display: flex;
+        margin-top: 20px;
+        justify-content: flex-end;
+        border-top: 2px solid #E6E7E9;
+        align-items: center;
+        padding: 17px 12px;
+        color: blue;
+
+        &.left {
+            justify-content: flex-start;
+        }
+    }
+
+}

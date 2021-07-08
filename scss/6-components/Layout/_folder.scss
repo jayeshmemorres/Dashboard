@@ -1,0 +1,31 @@
+.folder-structure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  background-color: palette(mono, white);
+  border: 1px solid palette(mono, light);
+  box-shadow: 2px 3px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  min-width: 185px;
+  max-width: 185px;
+  margin: 5px 10px 20px 15px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: palette(blue, deep-light);
+    transition: all 0.3s;
+  }
+
+  img {
+    margin-top: 10px;
+  }
+
+  span {
+    margin-top: 20px;
+    font-size: 16px;
+    color: palette(blue, base);
+  }
+}

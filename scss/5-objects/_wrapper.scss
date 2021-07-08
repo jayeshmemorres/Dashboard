@@ -1,0 +1,20 @@
+// ----------------------------------------------
+// WRAPPER OR CONTENT
+// ----------------------------------------------
+
+
+.o-wrapper {
+    width: calc(100% - 300px);
+    min-height: 100vh;
+    transition: all .3s;
+    position: relative;
+    top: 0;
+    left: 300px;
+    background: palette(blue, deep-light);
+    padding: 20px;
+
+    &--large {
+      width: calc(100% - 90px);
+      left: 90px;
+    }
+  }

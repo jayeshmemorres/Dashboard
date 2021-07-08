@@ -1,0 +1,15 @@
+mixin 1-dashboard-importantlist(img,up,down,button)
+    div.c-geric-card__list
+           img(src=img).img
+           div.c-geric-card__list-name
+            div.c-geric-card__name
+                div.c-geric-card__first=up
+                div.c-geric-card__second=down
+            div.c-geric-card__button=button
+div.c-geric-card__important-list
+  +1-dashboard-importantlist("../../images/img.png","Capsule","Users","Launch importer")
+  +1-dashboard-importantlist("../../images/img1.png","Capsule","Users","Launch importer")
+  +1-dashboard-importantlist("../../images/img2.png","Capsule","Users","Launch importer")
+  
+  
+

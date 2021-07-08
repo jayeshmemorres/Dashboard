@@ -1,0 +1,64 @@
+.c-navbar {
+    display: flex;
+    height: 10vmin;
+    background-color: palette(mono, primery-dark);
+    align-items: center;
+    justify-content: space-between;
+
+
+    &__logo {
+        width: 75px;
+        margin-left: 30px;
+        color: white;
+        font-size: 28px;
+    }
+
+    &__menu {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 560px;
+        max-width: 700px;
+        color: white;
+        font-style: $primary-font;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+
+        i {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 16px;
+
+            :hover {
+                color: white;
+            }
+        }
+
+        span {
+            margin-left: 5px;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.7);
+            ;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        margin-right: 30px;
+    }
+
+    &__user-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        margin-right: 4px;
+        cursor: pointer;
+        margin-left: 20px;
+        img{
+            border-radius: 20px;
+        }
+    }
+}

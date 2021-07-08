@@ -1,0 +1,136 @@
+// ------------------------------------------------------------------------
+// Bootstrap - A framework for building responsive, mobile-first sites, with BootstrapCDN.
+// ------------------------------------------------------------------------
+$theme-colors: (
+  "primary": #0047CC,
+);
+// @import "~bootstrap/scss/bootstrap";
+
+// ------------------------------------------------------------------------
+// ReactDatetime - A datetime picker library
+// ------------------------------------------------------------------------
+// @import "~react-datetime/css/react-datetime.css";
+
+// ------------------------------------------------------------------------
+// ReactToastify - A toast display library
+// ------------------------------------------------------------------------
+// @import "~react-toastify/dist/ReactToastify.css";
+
+// ------------------------------------------------------------------------
+// Settings - Global variables like fonts and colors.
+// ------------------------------------------------------------------------
+@import '1-settings/colors';
+@import '1-settings/fonts';
+@import '1-settings/variables';
+
+
+// ------------------------------------------------------------------------
+// Tools - Default mixins.
+// ------------------------------------------------------------------------
+@import '2-tools/media-queries';
+@import '2-tools/mixins';
+@import '2-tools/modifier';
+
+
+// ------------------------------------------------------------------------
+// Generic - Ground-zero styles (resets, box-sizing, etc.).
+// ------------------------------------------------------------------------
+@import '3-generic/box-sizing';
+@import '3-generic/normalize';
+@import '3-generic/reset';
+@import '3-generic/shared';
+
+
+// ------------------------------------------------------------------------
+// Elements - Unclassed HTML elements (type selectors).
+// ------------------------------------------------------------------------
+@import '4-elements/blockquote';
+@import '4-elements/body';
+@import '4-elements/em';
+@import '4-elements/headings';
+@import '4-elements/hr';
+@import '4-elements/html';
+@import '4-elements/images';
+@import '4-elements/links';
+@import '4-elements/lists';
+@import '4-elements/tables';
+@import '4-elements/fieldset';
+
+
+// ------------------------------------------------------------------------
+// Objects - Undecorated design patterns.
+// ------------------------------------------------------------------------
+@import '5-objects/grid';
+@import '5-objects/form';
+@import '5-objects/section';
+@import '5-objects/tile';
+@import '5-objects/scrollbar';
+@import '5-objects/wrapper';
+@import '5-objects/icon';
+
+
+// ------------------------------------------------------------------------
+// Components - specific UI components.
+// ------------------------------------------------------------------------
+@import '6-components/input/input';
+@import '6-components/overlays/sidebar';
+@import '6-components/overlays/dropdown';
+@import '6-components/overlays/toast';
+
+@import '6-components/button/buttons';
+
+@import '6-components/navigation/header';
+@import '6-components/navigation/breadcrumb';
+
+@import '6-components/Layout/banner';
+@import '6-components/Layout/section';
+@import '6-components/Layout/badge';
+@import '6-components/Layout/tag';
+@import '6-components/Layout/employee';
+@import '6-components/Layout/alert';
+@import '6-components/Layout/mail';
+@import '6-components/Layout/user';
+@import '6-components/Layout/option';
+@import '6-components/Layout/details';
+@import '6-components/Layout/subscription';
+@import '6-components/Layout/radioblock';
+@import '6-components/Layout/task';
+@import '6-components/Layout/notification';
+@import '6-components/Layout/folder';
+//my
+@import '6-components/Layout/navbar';
+@import '6-components/Layout/1-dash-card';
+@import '6-components/dropdown/dropdown';
+@import '6-components/table/1-dashboard-table';
+
+
+
+
+@import '6-components/custom/datetimepicker';
+@import '6-components/custom/country-select';
+@import '6-components/custom/file-control';
+@import '6-components/custom/graph';
+@import '6-components/custom/csv-reader';
+@import '6-components/custom/draggable-uploader';
+
+@import '6-components/bootstrap/popover';
+@import '6-components/bootstrap/model';
+@import '6-components/bootstrap/collapse';
+@import '6-components/bootstrap/card';
+
+
+
+
+// ------------------------------------------------------------------------
+// Utilities - Helpers and overrides.
+// ------------------------------------------------------------------------
+@import '7-utilities/helpers';
+@import '7-utilities/hide';
+
+
+
+
+@import '8-pages/main-panel';
+@import '8-pages/1-dashboard-layout';
+
+

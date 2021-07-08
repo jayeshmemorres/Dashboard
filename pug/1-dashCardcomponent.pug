@@ -1,0 +1,16 @@
+mixin dash1_card(l1,l2,r1,r2)
+    div.c-card
+      div.c-card__head
+        div.c-card__head-left=l1
+        div.c-card__head-right=l2
+      div.c-card__body
+        div.c-card__body-left=r1
+        div.c-card__body-right
+          img(src=r2)
+div.main
+  +dash1_card('Total Users',"30%" ,"4000","../../images/Vector.png")
+  +dash1_card('Sessions',"30%" ,"4000" ,"../../images/Vector.png")
+  +dash1_card('Avg. Click Rate',"30%" ,"4000","../../images/Vector.png")
+  +dash1_card('Pageviews',"30%" ,"4000","../../images/Vector.png")
+  
+
