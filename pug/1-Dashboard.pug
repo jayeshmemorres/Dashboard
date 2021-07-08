@@ -8,43 +8,75 @@ html
     div.container
       div.c-dashboard1
         div.c-dashboard1__header
-           div.c-dashboard1__header__heading 
-              h1 Dashboard
-           div.c-dashboard1__header__Button
-               button.c-button 
-                 i.fa.fa-user-plus(aria-hidden='true')
-                   span   Invite users
+          div.c-dashboard1__header__heading 
+            h1 Dashboard
+          div.c-dashboard1__header__Button
+            button.c-button 
+              i.fa.fa-user-plus(aria-hidden='true')
+                span   Invite users
 
         include 1-dashCardcomponent
         div.general
           div.c-geric-card 
             include custom-heading
             +custom-heading("Import data into Front Dashboard")
-            
+
             span.he.all See and talk to your users and leads immediately
             include 1-dashboard-importantlist
             div.c-geric-card__bottom
               include Custom-dropdown
           div.c-geric-card 
-             +custom-heading("Monthly expenses")
-             div.c-geric-card__img
-                img(src="../../images/chart.png")
-             div.c-geric-card__bottom.left
+            +custom-heading("Monthly expenses")
+            div.c-geric-card__img
+              img(src="../../images/chart.png")
+            div.c-geric-card__bottom.left
               include Custom-dropdown
         div.table-user
           include 1-dash-custom-table
         div.c-trasction-repost
-           div.c-geric-card
-               +custom-heading("Transactions")
-               img(src="../../images/venn_example.jpg")
-               include Custom-dropdown
-           div.c-geric-card
-               +custom-heading("Reports overview")
-               +custom-heading("$7,432.14 USD")
-               div.c-geric-card__progrss
-                  progress
-                  div.c-geric-card__persantage
-                     p 0%
-                     p 100%
-               div.c-geric-card__bottom
-                  include Custom-dropdown
+          div.c-geric-card
+            +custom-heading("Transactions")
+            img(src="../../images/venn_example.jpg").c-geric-card__veen-image
+            div.c-geric-card__bottom
+              include Custom-dropdown
+          div.c-geric-card
+            +custom-heading("Reports overview")
+            +custom-heading("$7,432.14 USD")
+            div.c-geric-card__report-progrss
+              progress
+              div.c-geric-card__report-persantage
+                p 0%
+                p 100%
+            div.c-geric-card__report-list
+                div.c-geric-card__report-color 
+
+                div.c-geric-card__report-item-detail
+                  div.c-geric-card__report-item-name name
+                  div.c-geric-card__report-item-value
+                     div.c-geric-card__report-item-incaress 12%
+                     div.c-geric-card__report-item-ammount  1200
+
+            div.c-geric-card__report-list
+                div.c-geric-card__report-color 
+
+                div.c-geric-card__report-item-detail
+                  div.c-geric-card__report-item-name name
+                  div.c-geric-card__report-item-value
+                     div.c-geric-card__report-item-incaress 12%
+                     div.c-geric-card__report-item-ammount  1200
+            div.c-geric-card__report-list
+                div.c-geric-card__report-color 
+
+                div.c-geric-card__report-item-detail
+                  div.c-geric-card__report-item-name name
+                  div.c-geric-card__report-item-value
+                     div.c-geric-card__report-item-incaress 12%
+                     div.c-geric-card__report-item-ammount  1200
+            div.c-geric-card__bottom
+              include Custom-dropdown
+    div.Layout-bottom
+       div.Layout-bottom__left  © 2020 Dlex Designs.
+       div.Layout-bottom__right
+          p Help center 
+          p Terms of use 
+          p Proivacy policy 

@@ -44,6 +44,7 @@ body {
     }
 
 }
+
 /////
 .general {
     display: flex;
@@ -110,12 +111,18 @@ body {
 
     //@at-root
     &__img {
-        margin-top: 60px;
+        // margin-top: 60px;
 
-        width: 500px;
-        height: 250px;
+        // width: 500px;
+        // height: 150px;
     }
-
+    &__veen-image{
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 87px;
+  width: 50%;
+    }
     &__bottom {
         display: flex;
         margin-top: 20px;
@@ -128,6 +135,58 @@ body {
         &.left {
             justify-content: flex-start;
         }
+
+
+
+    }
+
+    &__report-progrss {
+        padding: 0px 25px;
+        width: 100%
+    }
+
+    progress {
+        width: 100%;
+    }
+
+    &__report-persantage {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__report-list {
+        display: flex;
+        padding: 10px 0px 10px 10px;
+        align-items: center;
+    }
+
+    &__report-color {
+        height: 10px;
+        width: 10px;
+        background-color: blue;
+        border-radius: 50%;
+    }
+
+    &__report-item-detail {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-bottom: 1px solid gainsboro;
+    padding: 10px 16px;
+    }
+
+    &__report-item-name {
+        // margin-left: 5px;
+        color: black;
+    }
+
+    &__report-item-incaress {
+        margin-right: 20px;
+        color: lightgreen;
+    }
+
+    &__report-item-value {
+        display: flex;
     }
 
 }

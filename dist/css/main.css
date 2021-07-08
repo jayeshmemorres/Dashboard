@@ -3493,10 +3493,12 @@ body {
   font-size: 18px;
 }
 
-.c-geric-card__img {
-  margin-top: 60px;
-  width: 500px;
-  height: 250px;
+.c-geric-card__veen-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 87px;
+  width: 50%;
 }
 
 .c-geric-card__bottom {
@@ -3519,6 +3521,68 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.c-geric-card__report-progrss {
+  padding: 0px 25px;
+  width: 100%;
+}
+
+.c-geric-card progress {
+  width: 100%;
+}
+
+.c-geric-card__report-persantage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.c-geric-card__report-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0px 10px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-geric-card__report-color {
+  height: 10px;
+  width: 10px;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.c-geric-card__report-item-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid gainsboro;
+  padding: 10px 16px;
+}
+
+.c-geric-card__report-item-name {
+  color: black;
+}
+
+.c-geric-card__report-item-incaress {
+  margin-right: 20px;
+  color: lightgreen;
+}
+
+.c-geric-card__report-item-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c-dropdown {
@@ -4633,4 +4697,29 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.Layout-bottom {
+  border-top: 2px solid #E6E7E9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Layout-bottom__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 284px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: blue;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }

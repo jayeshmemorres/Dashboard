@@ -1,13 +1,13 @@
-.container{
-    
+.container {
+
     display: flex;
     padding: 0px 210px 0px 210px;
     justify-content: center;
 
-    .c-dashboard1{
-        
+    .c-dashboard1 {
 
-        &__header{
+
+        &__header {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -15,10 +15,27 @@
         }
     }
 
-    .table-user{
+    .table-user {
         padding: 15px;
     }
-    .c-trasction-repost{
+
+    .c-trasction-repost {
         display: flex;
+    }
+
+}
+
+.Layout-bottom {
+    border-top: 2px solid #E6E7E9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__right {
+        display: flex;
+        width: 284px;
+        justify-content: space-around;
+        color: blue;
+        align-items: center;
     }
 }
