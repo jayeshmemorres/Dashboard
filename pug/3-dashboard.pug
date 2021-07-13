@@ -1,0 +1,55 @@
+doctype html
+html
+  head 
+    link(rel='stylesheet', href='../../css/main.css')
+    link(href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css', rel='stylesheet')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  body 
+     div.c3-dashboard
+        div.c3-dashboard-side-nav
+           include 3-dashboard-nav
+        div.center
+            div.center__heading
+               include custom-card-heading
+               +custom-card-heading("All tickets" ,"font-24")
+               include Custom-Input
+               div.center__input
+                  +Custom-Input("text","search","Search","c-input")
+                  i.bx.bx-search
+            div.row1
+               include 3-dashboard-card
+               +3-dashboard-card("../../images/img.png","3-dashboard-card","purple")
+               +3-dashboard-card("../../images/img.png","3-dashboard-card","orange")
+               +3-dashboard-card("../../images/img.png","3-dashboard-card","green")
+               +3-dashboard-card("../../images/img.png","3-dashboard-card","blue")
+            include 3-dashboard-table
+            div.center__bottom
+               i.bx.bx-loader-circle
+               
+        div.right
+            i.bx.bx-bell.right__icon
+            include Custom-calender
+            div.right__task-list
+               div.right__task-header
+                   +custom-card-heading("Today’s tasks","font-20")
+                   +custom-card-heading("View all","font-12")
+               div.right__task-list-items
+                  include Custom-checkbox
+                  +custom-card-heading("Create a learning video to the customer in the following ticket ","font-12")
+                  span #82371
+               div.right__task-list-items
+                  include Custom-checkbox
+                  +custom-card-heading("Create a learning video to the customer in the following ticket","font-12")
+                  span #82371
+               div.right__task-list-items
+                  include Custom-checkbox
+                  +custom-card-heading("Create a learning video to the customer in the following ticket #82372","font-12")
+              
+                  
+               
+            div.right__add
+                i.bx.bx-plus.right__add-icon
+                +custom-card-heading("Add Task","font-16").right__add-text
+
+                 
+                

@@ -1,0 +1,109 @@
+.c4-sidenavbar {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    background-color: #3C38CE;
+
+    &__logo-content {
+        text-align: center;
+        margin: 12px 10px;
+        height: 50px;
+        width: 100%;
+
+        border-bottom: 1px solid white;
+    }
+
+    &__logo {
+        display: flex;
+        color: white;
+        text-align: center;
+
+        img {
+            margin-right: 10px;
+        }
+    }
+
+    &__logo-name {
+        font-size: 25px;
+        text-align: center;
+
+    }
+
+    
+    ul {
+        margin-top: 20px;
+
+        i {
+            color: white;
+            margin-left: 10px;
+        }
+
+        a {
+            color: rgba(255, 255, 255, 0.7);
+
+        }
+
+        span {
+            margin-left: 10px;
+        }
+
+        li {
+            position: relative;
+            height: 35px;
+            width: 100%;
+            margin: 0 5px;
+            line-height: 50px;
+        }
+    }
+
+
+
+    &__profile-content {
+        position: absolute;
+        color: #000;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__profile {
+        position: relative;
+        padding: 10px;
+    }
+
+    &__profile-details {
+        display: flex;
+        width: 100%;
+        padding: 10px;
+        align-items: center;
+        text-align: center;
+        color: white;
+        justify-content: space-between;
+    }
+
+    &__profile-name {
+        margin: 10px;
+    }
+
+
+    &__drive{
+        font-size: 12px;
+
+
+        margin: 20px;
+        padding: 10px 20px 10px 20px;
+        display: flex;
+        background-color: #4A4DE6;
+        justify-content: space-between;
+        border-radius: 4px;
+        color: white;
+        progress{
+            width: 70px;
+        }
+    }
+    &__drive-list{
+        
+    }
+
+}

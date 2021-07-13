@@ -1,0 +1,43 @@
+.c4-dashboard-profile {
+    padding: 20px 20px;
+    min-width: 350px;
+    max-width: 350px;
+    min-height: 134px;
+    background: #FFFFFF;
+    border: 1px solid #E6E7E9;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin: 20px;
+
+
+    &__detail {
+        display: flex;
+        width: 100%;
+        text-align: center;
+    }
+    &__detail-list {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        padding: 0px 15px;
+    }
+
+
+    &__detail-graph-price{
+
+        &.green{
+            color: #4CAF50;
+        }
+        &.red{
+            color: #DD425A;;
+        }
+    }
+    &__meter {
+        width: 100%;
+
+        progress {
+            width: 100%;
+        }
+    }
+}

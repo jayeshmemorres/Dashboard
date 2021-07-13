@@ -1,0 +1,76 @@
+.c-group-overall {
+    min-width: 405px;
+    max-width: 405px;
+    min-height: 289px;
+    border: 1px solid #E6E7E9;
+    border-radius: 8px;
+    margin-right: 17px;
+    position: relative;
+
+
+    
+    &.padding {
+        padding: 20px;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__innercard-text {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        margin: 10px;
+    }
+
+    &__innercard {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 15px;
+        min-width: 365px;
+        max-width: 365px;
+        min-height: 116px;
+        background-color: #FF9365;
+        color: white;
+        border-radius: 12px;
+        margin-bottom: 20px;
+
+        
+    }
+
+    &__top{
+        padding: 20px;
+        width: 100%;
+        position: relative;
+        progress{
+            width: 100%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+    }
+    &__cuntry-list{
+        display: flex;
+        margin-top: 35px;
+        justify-content: space-between;
+    }
+    &__bottom{
+        position:absolute;
+        bottom: 0px;
+        right: 0%;
+        padding: 15px;
+        color: blue;
+
+        span{
+            margin-right: 20px;
+        }
+        
+    }
+    &__border{
+        border-bottom: 1px solid #E6E7E9;
+        
+    }
+}

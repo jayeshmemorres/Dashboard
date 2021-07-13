@@ -1,0 +1,35 @@
+doctype html
+html
+  head 
+    link(rel='stylesheet', href='../../css/main.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  body
+    div.c3-dashboard-side-nav
+      div.c3-dashboard-side-nav__logo
+        img(src="../../images/d.png")
+      div.c3-dashboard-side-nav__list
+        div.c3-dashboard-side-nav__center
+          div.c3-dashboard-side-nav__Overview.all
+            i.bx.bx-bar-chart
+            include custom-card-heading
+            +custom-card-heading("Overview" ,"font-12","grey")
+          div.c3-dashboard-side-nav__Tickets.all
+            i.bx.bx-list-ul 
+            +custom-card-heading("Tickets" ,"font-12","grey")  
+          div.c3-dashboard-side-nav__Messages.all
+            i.bx.bx-bar-chart
+            +custom-card-heading("Messages","font-12","grey")
+          div.c3-dashboard-side-nav__Customers.all
+            i.bx.bx-bar-chart
+            +custom-card-heading("Customers" ,"font-12","grey")
+          div.c3-dashboard-side-nav__Support.all
+            i.bx.bx-bar-chart
+            +custom-card-heading("Support" ,"font-12","grey")
+          div.c3-dashboard-side-nav__Settings.all
+            i.bx.bx-bar-chart 
+            +custom-card-heading("Settings" ,"font-12","grey")
+        div.c3-dashboard-side-nav__end
+          div.c3-dashboard-side-nav__add-button
+            img(src="../../images/Add-icon.png")
+          div.c3-dashboard-side-nav__user-image
+            img(src="../../images/c4.png")

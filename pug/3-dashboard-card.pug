@@ -1,0 +1,7 @@
+mixin 3-dashboard-card(Images ,heading,className)
+  div.c-dashboard-card(class=className) 
+     div.c-dashboard-card__heading
+       include custom-card-heading
+       +custom-card-heading(heading)
+     div.c-dashboard-card__img 
+       img(src=Images)

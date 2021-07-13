@@ -1,0 +1,82 @@
+doctype html
+html
+  head 
+    link(rel='stylesheet', href='../../css/main.css')
+    link(href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css', rel='stylesheet')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  body 
+    div.c-progress-dashboard
+      include 2 -dashboard-side-nav
+      div.c-progress-dashboard-center
+        include custom-dashboard-heading
+        +custom-dashboard-heading("Progress Dashboard")
+        div.row1
+          div.deadline-card
+            include 2-dashboard-deadline-card
+          div.card-ho-read
+            include 2-dashboard-card-home-reading
+            +2-dashboard-card-home-reading("../../images/right-blue.png","Home Work" ,"For today’s lesson","35 min ago","amber")
+            +2-dashboard-card-home-reading("../../images/right-red.png","Reading" ,"24 words per week","2h ago","blue")
+        div.row2
+
+          div.c-group-overall.padding
+            
+            div.c-group-overall__header
+              include custom-card-heading
+              +custom-card-heading("Group info")
+              i.fa.fa-bell(aria-hidden='true')
+            +custom-card-heading("13 students in the group","font-12","light-white")
+            div.c-group-overall__innercard
+              include custom-heading
+              +custom-card-heading("Group homework","font-16","white")
+              div.c-group-overall__innercard-text
+                +custom-card-heading("4 students from your group online now","font-12","white")
+                i.fa.fa-bell(aria-hidden='true')
+                
+            +custom-card-heading("Today’s lesson")
+            +custom-card-heading("unit 6 - Article","light-white")
+            
+            
+
+          div.c-group-overall
+             div.c-group-overall__top
+              +custom-card-heading("Overall progress")
+              div.c-group-overall__cuntry-list
+                   div.c-group-overall__cuntry-Name 
+                     +custom-card-heading("Germany for ","font-24")
+                     +custom-card-heading("beginners","font-24")
+                   div.c-group-overall__cuntry-Flag-img
+                      img(src="../../images/c1.png")
+              Progress
+             div.c-group-overall__border
+             div.c-group-overall__bottom
+                span  Explore more
+                i.fa.fa-arrow-right  
+                                
+        div.row3
+          include 2-dashboard-subject-card
+          +2-dashboard-subject-card("../../images/c1.png","Grammer","+30 grammer rules","../../images/c1.png")
+          +2-dashboard-subject-card("../../images/c1.png","Dictionary","+30 grammer rules","../../images/c1.png")
+      div.c-progress-dashboard-right  
+        div.c-progress-dashboard-right__profile
+          img(src="../../images/c4.png")   
+          +custom-card-heading("Jayesh","font-20","margin-5")
+          +custom-card-heading("Business analyst","font-14")
+          div.c-progress-dashboard-right__card
+            div.c-progress-dashboard-right__text 
+              div.c-progress-dashboard-right__up 
+                +custom-card-heading("Get - 10% sell price") 
+              div.c-progress-dashboard-right__down  for “spanish A2” course 
+            div.c-progress-dashboard-right__icon 
+              i.fa.fa-arrow-right(aria-hidden='true')  
+          div.Course 
+           div.Course__heading  
+            +custom-card-heading("Course Progress","font-24") 
+            include 2-dashboard-course
+            +2-dashboard-course("70%","../../images/re.png","Physics","total 180","amber")
+            +2-dashboard-course("90%","../../images/rect.png","Physics","total 180","pink")
+            +2-dashboard-course("10%","../../images/rect1.png","Physics","total 180","blue")
+
+
+      //- div.c-person-detial
+

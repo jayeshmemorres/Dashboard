@@ -1,0 +1,31 @@
+.c-card-course {
+    min-width: 290px;
+    max-width: 290px;
+    min-height: 90px;
+    border: 1px solid #E6E7E9;
+    border-radius: 12px;
+    display: flex;
+    padding: 20px 20px;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+
+    &__perantage{
+        margin: 10px;
+        &.blue{
+            color: #4A4DE6; 
+         }
+         &.amber{
+             color: #FF8F00; 
+          }
+          &.pink{
+              color: #E83274;
+          }
+        
+    }
+    &__icon{
+        margin: 20px;  
+        text-align: center;
+    }
+    
+}

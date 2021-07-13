@@ -1,0 +1,133 @@
+.c3-dashboard {
+    display: flex;
+
+
+    position: relative;
+    min-height: 100vh;
+    max-height: fit-content;
+    width: 100%;
+    overflow: hidden;
+}
+
+.center {
+    min-width: 1100px;
+    max-width: 1100px;
+    min-height: 1000px;
+    max-height: 1000px;
+    padding: 15px 40px;
+    position: absolute;
+    left: 100px;
+
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+
+        
+    }
+
+    &__input{
+        width: 300px;
+        background: #F8F8FA;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        input{
+            border: none;
+            width: 400px;
+            color: black;
+            padding: 10px;
+        }
+    }
+    &__bottom {
+        text-align: center;
+        margin: 15px;
+
+        i {
+            color: blue;
+        }
+    }
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.right {
+    min-width: 320px;
+    max-width: 320px;
+    max-width: auto;
+    background: #F8F8FA;
+    box-sizing: border-box;
+    padding: 20px 45px;
+    height: 100vh;
+    text-align: center;
+    position: fixed;
+    right: 0px;
+
+    &__icon {
+        display: flex;
+        flex-direction: row;
+        flex-direction: row-reverse;
+        font-size: 20px;
+    }
+
+    &__task-list {
+        margin-top: 40px;
+    }
+
+    &__task-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+&__task-list-items{
+    display: flex;
+    padding: 5px;
+    // text-align: center;
+    align-items: center;
+    line-height: 12px;
+    margin-top: 10px;
+
+    &.cross{
+
+    }
+
+    span{
+        font-size: 12px;
+        color: blue;
+    }
+    // padding: 20px;
+}
+
+
+
+
+
+
+    &__add {
+        display: flex;
+        width: 100%;
+        padding: 5px 10px;
+        border: 1px dashed gray;
+        text-align: center;
+        align-items: center;
+        border-radius: 10px;
+        margin-top: 25px;
+
+        i {
+            font-size: 28px;
+        }
+    }
+
+    &__add-icon {
+        // margin: 10px;
+    }
+
+    &__add-text {
+        // margin: 17px; 
+    }
+
+
+}

@@ -100,11 +100,39 @@ $theme-colors: (
 //my
 @import '6-components/Layout/navbar';
 @import '6-components/Layout/1-dash-card';
+@import '6-components/Layout/2-dashboard-card-home-reading';
+@import '6-components/Layout/2-dashboard-deadline';
+@import '6-components/Layout/_2-dashboard-group-overall';
+@import '6-components/Layout/2-dashboard-card-subjects';
+@import '6-components/Layout/custom-card-heading';
+@import '6-components/Layout/2-dashboard-course';
+@import '6-components/Layout/3-dash-card';
+@import '6-components/Layout/4-dashboard-profile';
+@import '6-components/Layout/4-dashboard-summery';
+@import '6-components/Layout/4-dashboard-card-all';
+
+
+
+
+
+
+
+
+
+
 @import '6-components/dropdown/dropdown';
 @import '6-components/table/1-dashboard-table';
+@import '6-components/table/_3-dasboard-table';
 
 
+//nav-side
+@import '6-components/sidenavbar/1-dashboard-nav';
+@import '6-components/sidenavbar/3-dasboard-nav';
+@import '6-components/sidenavbar/4-dashboard-nav';
+@import '6-components/Text/dashboard-heading';
 
+//@at-root
+@import '6-components/custom/_calender';
 
 @import '6-components/custom/datetimepicker';
 @import '6-components/custom/country-select';
@@ -132,5 +160,10 @@ $theme-colors: (
 
 @import '8-pages/main-panel';
 @import '8-pages/1-dashboard-layout';
+@import '8-pages/2-dashboard-layout';
+@import '8-pages/3-dashboard-layout';
+@import '8-pages/4-dashboard-layout';
+
+
 
 

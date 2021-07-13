@@ -1,0 +1,24 @@
+mixin c4-dashboard-profile(Img,name,post,inde,price,color)
+  div.c4-dashboard-profile
+    div.c4-dashboard-profile__detail
+      div.c4-dashboard-profile__img
+        img(src=Img)
+      div.c4-dashboard-profile__detail-list
+        div.c4-dashboard-profile__detail-names
+          div.c4-dashboard-profile__name
+            include custom-card-heading
+            +custom-card-heading(name,'font-16')
+          div.c4-dashboard-profile__post 
+            +custom-card-heading(post,'font-12')
+        div.c4-dashboard-profile__detail-graph
+         div.c4-dashboard-profile__detail-graph-list
+           div.c4-dashboard-profile__detail-graph-inc-dec
+            img(src=inde)
+           div.c4-dashboard-profile__detail-graph-price
+            +custom-card-heading(price,'font-11',color)
+    div.c4-dashboard-profile__meter
+      +custom-card-heading("3 from 6 tasks completed",'font-12')
+      progress#file(value='32', max='100')  32% 
+            
+
+

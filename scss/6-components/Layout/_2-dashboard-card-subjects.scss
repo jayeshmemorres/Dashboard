@@ -1,0 +1,28 @@
+.c-dashboard-subject-card {
+    min-width: 405px;
+    max-width: 405px;
+    min-height: 88px;
+    border: 1px solid #E6E7E9;
+    border-radius: 12px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+
+    &__img {
+        padding: 15px;
+    }
+
+    &__list {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+    }
+
+    &__icon {
+        color: blue;
+        font-size: 12px;
+    }
+
+}

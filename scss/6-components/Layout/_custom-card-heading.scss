@@ -1,0 +1,43 @@
+.c-custom-card-heading{
+    font-size: 18px;
+    color: black;
+
+    &.font-12{
+        font-size: 12px;
+    }
+    &.font-14{
+        font-size: 14px;
+        color: rgba(24, 24, 25, 0.42);
+    }
+    &.font-20{
+        font-size: 20px;
+    }
+    &.font-24{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    &.green{
+        color: #4CAF50;
+    }
+    &.red{
+        color: #DD425A;;
+    }
+    &.blue{
+        color: #4A4DE6;
+    }
+    &.margin-5{
+        margin-top: 10px;
+    }
+    &.white{
+        color:white;
+    }
+    &.light-white{
+        color: rgba(24, 24, 25, 0.7);
+    }
+    &.grey{
+        color: rgba(255, 255, 255, 0.7);;
+    }
+    &.light{
+        color: rgba(24, 24, 25, 0.42);
+    }
+}

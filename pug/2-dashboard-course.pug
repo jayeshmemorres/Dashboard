@@ -1,0 +1,12 @@
+//- div.c-card-course
+mixin 2-dashboard-course(persantge,icon,subject,subhading,className)
+  div.c-card-course 
+    div.c-card-course__perantage(class=className)=persantge
+    div.c-card-course__icon
+      img(src=icon)
+    div.c-card-course__list
+      div.c-card-course__subject
+        include custom-card-heading  
+        +custom-card-heading(subject) 
+      div.c-card-course__subhading=subhading
+

@@ -1,0 +1,84 @@
+.dash-car4-all {
+    min-width: 350px;
+    max-width: 350px;
+    max-height: 334px;
+    min-height: 335px;
+    background: #FFFFFF;
+    border: 1px solid #E6E7E9;
+    border-radius: 8px;
+    position: relative;
+
+
+    &__top {
+        padding: 20px;
+    }
+
+    &__border {
+        position: absolute;
+        width: 100%;
+        bottom: 42px;
+        border-top: 1px solid #E6E7E9;
+        
+    }
+
+    &__bottom {
+        position: absolute;
+
+        bottom: 0;
+        right: 0;
+        display: flex;
+        color: #4A4DE6;
+        align-items: center;
+        padding: 10px;
+
+    }
+
+    &__center{
+        display: flex;           /* establish flex container */
+    flex-direction: column;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center;     /* center items horizontally, in this case */
+    height: 300px;
+    }
+    //3
+    
+
+
+
+
+
+
+
+
+    //4
+   &__country-top{
+       padding: 15px 0px 10px 25px;
+          }
+}
+
+/////
+.c-flag-list{
+    width: 100%;
+    align-items: center;
+    position: relative;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    img{
+        margin: 10px;
+    }
+
+    &__names{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        border-bottom: 1px solid #E6E7E9;;
+        text-align: center;
+    }
+    &__Name{
+        margin: 20px;
+    }
+    &__price{
+        margin: 20px;
+    }
+}

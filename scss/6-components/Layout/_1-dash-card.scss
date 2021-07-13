@@ -57,7 +57,9 @@ body {
     border: 2px solid #E6E7E9;
     border-radius: 6px;
     margin: 20px;
-
+    &__img {
+        margin: 66px;
+    }
 
 
 
@@ -67,6 +69,10 @@ body {
         font-size: 18px;
         display: block;
         padding: 25px 10px 0px 30px;
+
+        &.white{
+            color: white;
+        }
     }
 
     &__important-list {

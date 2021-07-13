@@ -1,0 +1,18 @@
+mixin 3-dashboard-table-body(body1,body2,body3,img1,img2,color,color1)
+    div.c-table__data-row
+        div.c-table__checkbox
+          include Custom-checkbox
+        div.c-table__customerName
+          include custom-card-heading
+          img(src=img1)
+          +custom-card-heading(body1 ,"font-16")
+          
+        div.c-table__stauts
+          span(class=color)=body1
+        div.c-table__priority
+           span(class=color1) Undefine
+        div.c-table__assignee
+            img(src=img2)
+        div.c-table__action
+           i.bx.bx-dots-horizontal-rounded
+    

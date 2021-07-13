@@ -1,0 +1,45 @@
+.c-sidenavbar1{
+    display: flex;
+    background-color: #10277C;
+    min-width:70px;
+    max-width: 70px;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    &__Logo{
+        margin-top: 30px;
+        font-size: 24px;
+        color: white;
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+        color: white;
+    }
+    &__first{
+        margin-top: 30px;
+       
+    }
+    &__second{
+        margin-top: 30px;
+    }
+    &__thired {
+        margin-top: 30px;
+    }
+    &__fourth{
+        margin-top: 30px;
+    }
+    &__fifth{
+        margin-top: 30px;
+    }
+
+}

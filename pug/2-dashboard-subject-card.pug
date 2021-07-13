@@ -1,0 +1,14 @@
+mixin 2-dashboard-subject-card(img,heading,subhading,icon)
+  div.c-dashboard-subject-card
+    div.c-dashboard-subject-card__img
+      img(src=img)
+    div.c-dashboard-subject-card__list
+      div.c-dashboard-subject-card__heading
+         include custom-card-heading
+         +custom-card-heading(heading)
+         div.c-dashboard-subject-card__subheading=subhading
+    div.c-dashboard-subject-card__icon
+        i.fa.fa-arrow-right(aria-hidden='true')
+
+
+

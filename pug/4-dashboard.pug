@@ -1,0 +1,85 @@
+doctype html
+html
+  head 
+    link(rel='stylesheet', href='../../css/main.css')
+    link(href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css', rel='stylesheet')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  body.dash4
+
+    include 4-dashboard-sidenav
+    div.center-4
+      div.center-4__row1
+        div.center-4__row1-header
+          include custom-card-heading
+          +custom-card-heading("Jayesh")
+          div.center-4__row1-header-list
+            div.center-4__row1-header-button
+              span Premium 
+            div.center-4__row1-header-wrap
+              div.center-4__row1-header-search-box
+                
+                div.center-4__row1-header-icon
+                  i.bx.bx-search
+                include Custom-Input
+                +Custom-Input("text","name","Search","c-Input")
+
+      div.center-4__row2
+        include 4-dashboard-profile
+        +c4-dashboard-profile("../../images/img (7).png","Jayesh","developer","../../images/inc.png","$1000.00","green")
+        +c4-dashboard-profile("../../images/img (7).png","Jayesh","developer","../../images/inc.png","$1000.00","green")
+        +c4-dashboard-profile("../../images/img (7).png","Jayesh","developer","../../images/dec.png","$1000.00","red")
+      div.center-4__row3
+        include 4-dashboard-work-summery
+        div.dash-car4-all
+          div.dash-car4-all__country-top
+            +custom-card-heading("Top countries")
+            +custom-card-heading("Favorites","font-14","light")
+            include 4-flag-list
+            +Flag-list("../../images/c1.png","Belgium","7.5k")
+            +Flag-list("../../images/c1.png","Belgium","7.5k")
+            +Flag-list("../../images/c1.png","Belgium","7.5k")
+          div.dash-car4-all__border
+          div.dash-car4-all__bottom
+            +custom-card-heading("Details " ,"font-14","blue")
+            i.bx.bxs-chevron-right
+
+      div.center-4__row4
+        div.center-4__card-1
+          div.dash-car4-all
+            div.dash-car4-all__top
+              include custom-card-heading
+              +custom-card-heading("Segmentation")
+              +custom-card-heading("All-user","font-14","light")
+              li Not specified
+              li Male
+              li Female
+              li Other
+            div.dash-car4-all__border
+            div.dash-car4-all__bottom
+              +custom-card-heading("Details " ,"font-14","blue")
+              i.bx.bxs-chevron-right
+
+
+
+
+
+
+        div.center-4__card-2
+          div.dash-car4-all
+            div.dash-car4-all__top
+              +custom-card-heading("Satisfaction rate")
+              +custom-card-heading("From all projects","font-14","light")
+              img(src="../../images/meter-1.png")
+            div.dash-car4-all__border
+            div.dash-car4-all__bottom
+              +custom-card-heading("Details " ,"font-14","blue")
+              i.bx.bxs-chevron-right
+
+        div.center-4__card-3
+          div.dash-car4-all 
+            div.dash-car4-all__center
+              img(src="../../images/Add.png")
+              +custom-card-heading("No components created yet ")
+              +custom-card-heading("Simply create your first component.","font-12","light")
+              +custom-card-heading("Just click on the button ","font-12", "light")
+              button.c-button +  Add component

@@ -1,0 +1,120 @@
+.c-table {
+    display: flex;
+    flex-direction: column;
+    min-width: 1000px;
+    max-width: auto;
+    margin-top: 10px;
+    height: 100%;
+
+    &__head-row {
+        display: flex;
+        margin-top: 10px;
+        align-items: center;
+        padding: 15px 15px;
+        border: 1px solid #E6E7E9;
+        border-radius: 8px;
+        letter-spacing: -0.3px;
+
+
+        color: rgba(24, 24, 25, 0.7);
+
+
+    }
+
+    &__data-row {
+        display: flex;
+        align-items: center;
+        padding: 15px 15px;
+        border: 1px solid #E6E7E9;
+        border-radius: 8px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    &__checkbox {
+        min-width: 50px;
+        max-width: 50px;
+    }
+
+    &__customerName {
+        min-width: 250px;
+        max-width: 250px;
+        display: flex;
+        align-items: center;
+        
+        img{
+            width: 50px;
+            margin-right: 10px;
+        }
+    }
+
+    &__stauts {
+        min-width: 150px;
+        max-width: 150px;
+
+        
+            span{
+                padding: 10px 15px;
+                border-radius: 40px;
+                &.purple{
+                    background-color: #F2E7FC;
+                    color:  #8C18E2;;
+                    font-weight: 500;
+                }
+                &.blue{
+                    background: #E1F5FD;
+                    color:  #4A4DE6;
+                    font-weight: 500;
+                }
+                &.orange{
+                    background: #FBEDE7;
+                    color: #FF6422;
+                    font-weight: 500;
+                }
+                &.green{
+                    background: #E8F5E9;
+                    color:  #4CAF50;
+                    font-weight: 500;
+                }
+
+                
+            }
+        
+
+    }
+
+    &__priority {
+        min-width: 200px;
+        max-width: 200px;
+        span{
+            
+            padding: 10px 15px;
+            background: rgba(86, 87, 88, 0.12);
+            border-radius: 100px;
+            color: rgba(24, 24, 25, 0.9);
+            font-weight: 500;
+                
+            
+        }
+
+        
+    }
+
+    &__assignee {
+        min-width: 200px;
+        max-width: 200px;
+        img{
+            width: 50px;
+            margin-right: 10px;
+        }
+    }
+
+    &__action {
+        min-width: 200px;
+        max-width: 200px;
+        i{
+            color: blue;
+            font-size: 20px;
+        }
+    }
+}
